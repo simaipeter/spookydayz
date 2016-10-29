@@ -26,8 +26,8 @@ function spookylogger() {
 	if ( $("#spo0kyD").html() && uj == 0  ) {
 		$("#spookylogger").append("new\n");
         $("#spo0kyD img").trigger ("click" );
-    
-        $("#spookylogger").append($("#spo0kyD").html());
+    	setTimeout(200,"$('#spookylogger').append($('#spo0kyD' ).html()+'') " );
+       
 		uj = 1;
 	}
 
