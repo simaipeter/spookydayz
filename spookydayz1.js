@@ -32,7 +32,7 @@ function spookylogger() {
 	if ( $("#spo0kyD").html() && uj == 1 ) {
 		
 		$("#spookylogger").append( $("#spo0kyD").html()+"\n" );
-		
+		uj = -1;
 	}
 
 	if ( !  $("#spo0kyD").html()  ) {
