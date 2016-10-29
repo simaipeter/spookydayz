@@ -24,11 +24,15 @@ uj = 0;
 function spookylogger() {
 
 	if ( $("#spo0kyD").html() && uj == 0  ) {
-		$("#spookylogger").append("new\n");
+	$("#spookylogger").append("new\n");
         $("#spo0kyD img").trigger ("click" );
-    	setTimeout(2222,"log()");
-       
-		uj = 1;
+	uj = 1;
+	}
+	
+	if ( $("#spo0kyD").html() && uj == 1 ) {
+		
+		$("#spookylogger").append( $("#spo0kyD").html()+"\n" );
+		
 	}
 
 	if ( !  $("#spo0kyD").html()  ) {
