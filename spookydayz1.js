@@ -48,7 +48,7 @@ function spookylogger() {
 	$("#spookylogger").append("new\n"); 
 	klik = Math.random()*2999;
         setTimeout('klikk();', klik);
-	$("#spookyi").html("Made by SPL, összes: "+ossz+", állapot: <a id='spookylogo' style='color:#ea672d; opacity:"+spooky1+"; '>Spooky! </a >  <div id='klikk'> Klikk: "+klik+"</ div> Hangjelzés: <input type='checkbox' id='hang' "+jelolt+" />");
+	$("#spookyi").html("Made by SPL, összes: "+ossz+", állapot: <a id='spookylogo' style='color:#ea672d; opacity:"+spooky1+"; '>Spooky! </a >  <div id='klikk'> Klikk: "+klik+"</div>  Hangjelzés: <input type='checkbox' id='hang' "+jelolt+" />");
 	uj = 1;
 		ossz++;
 	
