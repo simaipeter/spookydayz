@@ -11,6 +11,7 @@ function init() {
 	spoky = document.createElement("div");
 	spoky.id = "spookylogger";
 	$("body").append(spoky); 
+	spoky = document.createElement("div");
 	spoky.id = "spookyi";
 	$("body").append(spoky);
 	$("#spookyi").css({"width":"26%", "height":"3%", "background":"#d2a990","color":"white", "position":" absolute", "top":"22px", "left":"2px", "z-index":"1", "opacity":"0.6", "overflow-x":"hidden", "overflow-y":"scroll "}) ;
