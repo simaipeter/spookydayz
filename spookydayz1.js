@@ -42,7 +42,7 @@ function spookylogger() {
 
 	}
 	clearInterval(t );
-setTimeout("spookylogger()",Math.floor(Math.random() * 3000)+1000)
+setTimeout("spookylogger()",Math.floor(Math.random() * 2999)+1000)
 	
 } 
 
