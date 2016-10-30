@@ -31,11 +31,11 @@ spooky1 = 1;
 
 function spookylogger() {
 	
-	if ( spooky1 == 0 ) {
+	if ( spooky1 < 0.1 ) {
 		
 		iranya = 0.1;
 	}
-	if ( spooky1 == 1 ) {
+	if ( spooky1 > 1.2 ) {
 		iranya = -0.1;	
 	}
 	
