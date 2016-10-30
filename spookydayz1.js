@@ -47,6 +47,7 @@ function spookylogger() {
 	$("#spookylogger").append("new\n"); 
 	klik = Math.random()*2999;
         setTimeout('klikk();', klik);
+	$("#spookyi").html("Made by SPL, összes: "+ossz+", állapot: <a id='spookylogo' style='color:#ea672d; opacity:"+spooky1+"; '>Spooky! </a >  <div> Klikk: "+klik+"</ div> Hangjelzés: <input type='checkbox' id='hang' "+jelolt+" />");
 	uj = 1;
 		ossz++;
 	
@@ -71,7 +72,14 @@ function spookylogger() {
 		klik = -1;
 	}
 	
-	$("#spookyi").html("Made by SPL, összes: "+ossz+", állapot: <a style='color:#ea672d; opacity:"+spooky1+"; '>Spooky! </a >  <div> Klikk: "+klik+"</ div> Hangjelzés: <input type='checkbox' id='hang' "+jelolt+" />");
+	if ( $("#hang:checked") ) {
+		jelolt = " checked  ";
+	}
+	else {
+		jelolt = "";
+	}
+	
+	$("#spookylogo").css("opacity",spooky1);
 	
 } 
 
