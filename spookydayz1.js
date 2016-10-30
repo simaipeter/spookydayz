@@ -44,8 +44,8 @@ function spookylogger() {
 
 	if ( $("#spo0kyD").html() && uj == 0  ) {
 	$("#spookylogger").append("new\n"); 
-		klik = Math.random()*2999;
-        setTimeout(klik,'klikk() ');
+	klik = Math.random()*2999;
+        setTimeout('klikk();', klik);
 	uj = 1;
 		ossz++;
 	
