@@ -27,7 +27,7 @@ uj = 0;
 ossz = 0;
 iranya = -0.2;
 spooky1 = 1;
-jelolt = 1;
+jelolt = " checked ";
 klik = 0;
 
 
@@ -71,7 +71,7 @@ function spookylogger() {
 		klik = -1;
 	}
 	
-	$("#spookyi").html("Made by SPL, összes: "+ossz+", állapot: <a style='color:#ea672d; opacity:"+spooky1+"; '>Spooky! </a >  <div> Klikk: "+klik+"</ div> Hangjelzés: <input type='checkbox' id='hang' checked='"+jelolt+"' />");
+	$("#spookyi").html("Made by SPL, összes: "+ossz+", állapot: <a style='color:#ea672d; opacity:"+spooky1+"; '>Spooky! </a >  <div> Klikk: "+klik+"</ div> Hangjelzés: <input type='checkbox' id='hang' "+jelolt+" />");
 	
 } 
 
