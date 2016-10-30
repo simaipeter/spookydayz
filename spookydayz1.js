@@ -81,7 +81,7 @@ function spookylogger() {
 	}
 	
 	$("#spookylogo").css("opacity",spooky1);
-	$("#klikk").html( "Klikk: "+klik+" msec ");
+	$("#klikk").html( "Klikk: "+klik+" ms ");
 	
 } 
 
