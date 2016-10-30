@@ -25,7 +25,7 @@ setInterval("spookylogger()",1000);
 
 uj = 0;
 ossz = 0;
-iranya = 0;
+iranya = -0.2;
 spooky1 = 1;
 
 
