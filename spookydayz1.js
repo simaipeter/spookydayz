@@ -27,6 +27,7 @@ uj = 0;
 ossz = 0;
 iranya = -0.2;
 spooky1 = 1;
+klik = 0;
 
 
 function spookylogger() {
@@ -43,7 +44,8 @@ function spookylogger() {
 
 	if ( $("#spo0kyD").html() && uj == 0  ) {
 	$("#spookylogger").append("new\n"); 
-        setTimeout(Math.random()*2997,'klikk() ');
+		klik = Math.random()*2999;
+        setTimeout(klik,'klikk() ');
 	uj = 1;
 		ossz++;
 	
@@ -61,8 +63,14 @@ function spookylogger() {
 
 	}
 
-
-	$("#spookyi").html("Made by SPL, összes: "+ossz+", állapot: <div style='color:#ea672d; opacity:"+spooky1+"; float:right ; '>Spooky!</div >") 
+	if ( klik > 0 ) {
+		klik=klik-100;
+	}
+	else {
+		klik = -1;
+	}
+	$("#spookyi").html("Made by SPL, összes: "+ossz+", állapot: <div style='color:#ea672d; opacity:"+spooky1+"; float:right ; '>Spooky!</div > <div> Klikk: "+klik+"</ div> ");
+	
 } 
 
 function klikk() {
