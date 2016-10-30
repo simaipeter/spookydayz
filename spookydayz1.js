@@ -62,7 +62,7 @@ function spookylogger() {
 	}
 
 
-	$("#spookyi").html("Made by SPL, összes: "+ossz+", állapot: <div style='color:#ea672d; opacity:"+spooky1+"; float:left; '>Spooky!</div >") 
+	$("#spookyi").html("Made by SPL, összes: "+ossz+", állapot: <div style='color:#ea672d; opacity:"+spooky1+"; float:right ; '>Spooky!</div >") 
 } 
 
 function klikk() {
