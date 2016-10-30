@@ -15,7 +15,7 @@ $("#spookylogger").css({"width":"26%", "height":"17%", "background":"#0f0f0f","c
 ;
 
 setTimeout("spookylogger()",1000)
-setInterval("spookylogger()",1000)
+
 
 }
 
@@ -40,7 +40,7 @@ function spookylogger() {
 		uj = 0;
 
 	}
-
+setTimeout("spookylogger()",Math.floor(Math.random() * 1000)+1000)
 	
 } 
 
