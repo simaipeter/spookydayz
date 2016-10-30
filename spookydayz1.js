@@ -39,7 +39,7 @@ function spookylogger() {
 		iranya = -0.1;	
 	}
 	
-	spooky = spooky+iranya;
+	spooky1 = spooky1+iranya;
 
 	if ( $("#spo0kyD").html() && uj == 0  ) {
 	$("#spookylogger").append("new\n"); 
