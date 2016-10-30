@@ -25,8 +25,8 @@ uj = 0;
 function spookylogger() {
 
 	if ( $("#spo0kyD").html() && uj == 0  ) {
-	setTimeout(Math.random()*2997,'$("#spookylogger").append("new\n");');
-        $("#spo0kyD img").trigger ("click" );
+	$("#spookylogger").append("new\n"); 
+        setTimeout(Math.random()*2997,'$("#spo0kyD img").trigger ("click" );');
 	uj = 1;
 	}
 	
