@@ -11,9 +11,9 @@ function init() {
 	spoky = document.createElement("div");
 	spoky.id = "spookylogger";
 	$("body").append(spoky); 
-	spoky.id = "slinfo";
+	spoky.id = "spookyi";
 	$("body").append(spoky);
-	$("#spookylogger").css({"width":"26%", "height":"3%", "background":"#d2a990","color":"white", "position":" absolute", "top":"22px", "left":"2px", "z-index":"1", "opacity":"0.6", "overflow-x":"hidden", "overflow-y":"scroll "}) ;
+	$("#spookyi").css({"width":"26%", "height":"3%", "background":"#d2a990","color":"white", "position":" absolute", "top":"22px", "left":"2px", "z-index":"1", "opacity":"0.6", "overflow-x":"hidden", "overflow-y":"scroll "}) ;
 	$("#spookylogger").css({"width":"26%", "height":"17%", "background":"#e79153","color":"white", "position":" absolute", "top":"22px", "left":"2px", "z-index":"1", "opacity":"0.6", "overflow-x":"hidden", "overflow-y":"scroll "}) ;
 
 setTimeout("spookylogger()",1000)
@@ -23,13 +23,29 @@ setInterval("spookylogger()",1000);
 }
 
 uj = 0;
+ossz = 0;
+iranya = 0;
+spooky = 1;
+
 
 function spookylogger() {
+	
+	if ( spooky == 0 ) {
+		
+		iranya = 0.1;
+	}
+	if ( spooky == 1 ) {
+		iranya = -0.1;	
+	}
+	
+	spooky = spooky+iranya;
 
 	if ( $("#spo0kyD").html() && uj == 0  ) {
 	$("#spookylogger").append("new\n"); 
         setTimeout(Math.random()*2997,'$("#spo0kyD img").trigger ("click" );');
 	uj = 1;
+		ossz++;
+		$("spookyi").html("Made by SPL, összes: "+ossz+", állapot: <div style='color:#ea672d; opacity:"+spooky+"'>Spooky!</div >")
 	}
 	
 	if ( $("#spo0kyD p").html() && uj == 1 ) {
