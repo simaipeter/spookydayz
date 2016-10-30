@@ -19,7 +19,8 @@ function init() {
 
 setTimeout("spookylogger()",1000)
 setInterval("spookylogger()",122);
-
+	
+$("#spookyi").html("Made by SPL, összes: "+ossz+", állapot: <a id='spookylogo' style='color:#ea672d; opacity:"+spooky1+"; '>Spooky! </a >  <div> Klikk: "+klik+"</ div> Hangjelzés: <input type='checkbox' id='hang' "+jelolt+" />");
 
 }
 
