@@ -14,7 +14,7 @@ function init() {
 	spoky = document.createElement("div");
 	spoky.id = "spookyi";
 	$("#spookylogger").append(spoky);
-	$("#spookyi").css({"width":"100%", "height":"44px", "background":"#d2a990","color":"white","position":"absolute","bottom":"-2px" }) ;
+	$("#spookyi").css({"width":"100%", "height":"44px","font-size":"25pt", "background":"#d2a990","color":"white","position":"absolute","bottom":"-2px" }) ;
 	$("#spookylogger").css({"width":"26%", "height":"17%", "background":"#e79153","color":"white", "position":" absolute", "top":"22px", "left":"2px", "z-index":"1", "opacity":"0.6", "overflow-x":"hidden", "overflow-y":"scroll "}) ;
 
 setTimeout("spookylogger()",1000)
@@ -62,7 +62,7 @@ function spookylogger() {
 	}
 
 
-	$("spookyi").html("Made by SPL, összes: "+ossz+", állapot: <div style='color:#ea672d; opacity:"+spooky1+"'>Spooky!</div >")
+	$("#spookyi").html("Made by SPL, összes: "+ossz+", állapot: <div style='color:#ea672d; opacity:"+spooky1+"'>Spooky!</div >") 
 } 
 
 function log() {
