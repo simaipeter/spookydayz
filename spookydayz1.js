@@ -27,7 +27,7 @@ uj = 0;
 ossz = 0;
 iranya = -0.2;
 spooky1 = 1;
-jelolt = true;
+jelolt = 1;
 klik = 0;
 
 
