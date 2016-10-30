@@ -13,8 +13,8 @@ function init() {
 	$("body").append(spoky); 
 	spoky = document.createElement("div");
 	spoky.id = "spookyi";
-	$("body").append(spoky);
-	$("#spookyi").css({"width":"100%", "height":"30px", "background":"#d2a990","color":"white", }) ;
+	$("#spookylogger").append(spoky);
+	$("#spookyi").css({"width":"100%", "height":"44px", "background":"#d2a990","color":"white", }) ;
 	$("#spookylogger").css({"width":"26%", "height":"17%", "background":"#e79153","color":"white", "position":" absolute", "top":"22px", "left":"2px", "z-index":"1", "opacity":"0.6", "overflow-x":"hidden", "overflow-y":"scroll "}) ;
 
 setTimeout("spookylogger()",1000)
