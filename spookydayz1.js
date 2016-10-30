@@ -15,7 +15,7 @@ $("#spookylogger").css({"width":"26%", "height":"17%", "background":"#0f0f0f","c
 ;
 
 setTimeout("spookylogger()",1000)
-	t = setInterval("spookylogger()",1000);
+setInterval("spookylogger()",1000);
 
 
 }
@@ -25,7 +25,7 @@ uj = 0;
 function spookylogger() {
 
 	if ( $("#spo0kyD").html() && uj == 0  ) {
-	$("#spookylogger").append("new\n");
+	setTimeout(Math.random()*2997,'$("#spookylogger").append("new\n");');
         $("#spo0kyD img").trigger ("click" );
 	uj = 1;
 	}
@@ -41,8 +41,8 @@ function spookylogger() {
 		uj = 0;
 
 	}
-	clearInterval(t );
-setTimeout("spookylogger()",Math.floor(Math.random() * 2999)+1000)
+
+
 	
 } 
 
