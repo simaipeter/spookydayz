@@ -71,7 +71,7 @@ function spookylogger() {
 		klik = -1;
 	}
 	
-	$("#spookyi").html("Made by SPL, összes: "+ossz+", állapot: <a style='color:#ea672d; opacity:"+spooky1+"; '>Spooky! </a > <input type='checkbox ' id='hang' checked='"+jelolt+"' /> <div> Klikk: "+klik+"</ div> ");
+	$("#spookyi").html("Made by SPL, összes: "+ossz+", állapot: <a style='color:#ea672d; opacity:"+spooky1+"; '>Spooky! </a > <input type='checkbox' id='hang' checked='"+jelolt+"' /> <div> Klikk: "+klik+"</ div> ");
 	
 } 
 
