@@ -15,7 +15,7 @@ function init() {
 	spoky.id = "spookyi";
 	$("#spookylogger").append(spoky);
 	$("#spookyi").css({"width":"100%", "height":"44px","font-size":"9pt", "background":"#d2a990","color":"white","position":"absolute","bottom":"-2px" }) ;
-	$("#spookylogger").css({"width":"26%", "height":"17%", "background":"#e79153","color":"white", "position":" absolute", "top":"22px", "left":"2px", "z-index":"1", "opacity":"0.6", "overflow-x":"hidden", "overflow-y":"scroll "}) ;
+	$("#spookylogger").css({"width":"341px", "height":"162.1px", "background":"#e79153","color":"white", "position":" absolute", "top":"22px", "left":"2px", "z-index":"1", "opacity":"0.6", "overflow-x":"hidden", "overflow-y":"scroll "}) ;
 
 setTimeout("spookylogger()",1000)
 setInterval("spookylogger()",122);
