@@ -1,4 +1,4 @@
-﻿var jq = document.createElement('script');
+var jq = document.createElement('script');
 jq.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js";
 document.getElementsByTagName('head')[0].appendChild(jq);
 // ... give time for script to load, then type (or see below for non wait option)
@@ -11,16 +11,6 @@ setTimeout("init()",2000);
 
 
 function init() {
-$( function() {
-    $( "#spookylogger" ).dialog({
-      modal: true,
-      buttons: {
-        Ok: function() {
-          $( this ).dialog( "close" );
-        }
-      }
-    });
-  } );
 
 	spoky = document.createElement("div");
 	spoky.id = "spookylogger";
@@ -35,6 +25,9 @@ setTimeout("spookylogger()",1000)
 setInterval("spookylogger()",122);
 	
 $("#spookyi").html("Made by SPL, összes: "+ossz+", állapot: <a id='spookylogo' style='color:#ea672d; opacity:"+spooky1+"; '>Spooky! </a >  <div id='klikk'> Klikk: "+klik+"</ div> Hangjelzés: <input type='checkbox' id='hang' "+jelolt+" />");
+$( function() {
+    $( "#spookylogger" ).dialog()
+});
 
 }
 
