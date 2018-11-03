@@ -15,7 +15,6 @@ document.head.appendChild(ju);
 
 setTimeout("init()",2000);
 
-
 function init() {
 
 	spoky = document.createElement("div");
