@@ -34,8 +34,10 @@ $( function() {
     $( "#spookylogger" ).dialog()
 });
 
-}
 $("#spookylogger").css({"max-height":"222px"});
+
+}
+
 
 uj = 0;
 ossz = 0;
